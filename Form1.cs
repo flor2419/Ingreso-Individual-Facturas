@@ -56,7 +56,7 @@ namespace Ingreso_Individual_Facturas
             else
             {
                 e.Handled = true;
-                MessageBox.Show("Solo Puede ingresar Numeros", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Solo Puede Ingresar Numeros", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
         }
