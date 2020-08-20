@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ingreso_Individual_Facturas
 {
-    class ClsFactura
+    class ClassFactura
     {
         
         private int numero;
@@ -32,7 +32,7 @@ namespace Ingreso_Individual_Facturas
         private double v3;
         private double v4;
 
-        public ClsFactura(int v1, string text1, string text2, string text3, string text4, string[] codigo, string[] descripcion, int[] cantidad, int[] precio, double v2, double v3, double v4)
+        public ClassFactura(int v1, string text1, string text2, string text3, string text4, string[] codigo, string[] descripcion, int[] cantidad, int[] precio, double v2, double v3, double v4)
         {
             this.v1 = v1;
             this.text1 = text1;
@@ -48,7 +48,7 @@ namespace Ingreso_Individual_Facturas
             this.v4 = v4;
         }
 
-        public ClsFactura(int numero, string proveedor, string razonSocial, string giro, string direccionProv, string[] codigo, string[] descripcion,
+        public ClassFactura(int numero, string proveedor, string razonSocial, string giro, string direccionProv, string[] codigo, string[] descripcion,
                          int[] cantidad, int[] precio, string fechaEmi, string fechaVen, double montoNeto, double MontoTotal, double iva)
         {
             this.Numero = numero;

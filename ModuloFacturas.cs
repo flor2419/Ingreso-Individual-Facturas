@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ingreso_Individual_Facturas
 {
-    public partial class Form1 : Form
+    public partial class ModuloFacturas : Form
     {
-        public Form1()
+        public ModuloFacturas()
         {
             InitializeComponent();
         }
@@ -71,7 +71,7 @@ namespace Ingreso_Individual_Facturas
        
             private void limpiarTextBoxes(Control parent)
             {
-                //Limpiar de manera rapida
+               
                 foreach (Control c in parent.Controls)
                 {
                     if (c is TextBox)
@@ -114,7 +114,7 @@ namespace Ingreso_Individual_Facturas
             txtMontoT.Text = totalProducto.ToString();
             txtIva.Text = iva.ToString();
 
-            ClsFactura factura = new ClsFactura (int.Parse(txtFactura.Text), txtProveedor.Text, txtRazonSocial.Text, txtGiro.Text, txtDireccion.Text,
+            ClassFactura factura = new ClassFactura (int.Parse(txtFactura.Text), txtProveedor.Text, txtRazonSocial.Text, txtGiro.Text, txtDireccion.Text,
                                                  codigo, descripcion, cantidad, precio, double.Parse(txtMontoN.Text),
                                                  double.Parse(txtMontoT.Text), double.Parse(txtIva.Text));
 
@@ -245,6 +245,6 @@ namespace Ingreso_Individual_Facturas
             SoloNumeros(e);
         }
 
-
+        
     }
 }

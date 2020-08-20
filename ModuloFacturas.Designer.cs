@@ -1,6 +1,6 @@
 ﻿namespace Ingreso_Individual_Facturas
 {
-    partial class Form1
+    partial class ModuloFacturas
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -420,6 +420,7 @@
             this.txtProveedor.Name = "txtProveedor";
             this.txtProveedor.Size = new System.Drawing.Size(100, 20);
             this.txtProveedor.TabIndex = 5;
+
             // 
             // txtFactura
             // 
